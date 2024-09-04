@@ -12,7 +12,7 @@ Clone this repo and run `npm i` and then `npm start`
 
 - Write a `checkAuth` function under the appropriate comment. Use the `cookie` module to parse the browser cookies and check the `loggedIn` cookie. If it has a value, return `true` otherwise return `false`.
 
-- Replace all the element properties in our `Route` components (inside of `Routes`) with `<ProtectedRoute />` EXCEPT for the "/login" route. We always want to be able to access that so leave it alone.
+- Replace all the element properties in our `Route` components (inside of `Routes`) with `<ProtectedRoute />` EXCEPT for the "/login" route. We always want to be able to access that so leave it alone.  
 
   - Dont forget to also add the component property to the `<ProtectedRoute />` element in which the Route should render. For example, if the route is "/about", we would want to pass our "About" component in the component property:
   - `<ProtectedRoute component={ About }/>`

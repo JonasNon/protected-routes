@@ -3,15 +3,20 @@ import { BrowserRouter } from "react-router-dom";
 
 import Navigation from "./components/Navigation";
 import Router from "./Router";
+import { Provider } from 'react-redux'
+import store from './Redux/Store'
 
 import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navigation />
-      <Router />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Navigation />
+        <Router />
+      </BrowserRouter>
+    </Provider>
+
   );
 }
 
